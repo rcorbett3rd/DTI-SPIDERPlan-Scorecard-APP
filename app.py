@@ -72,8 +72,13 @@ if uploaded:
             st.info("No RT Structure Set detected.")
 
         st.subheader("DVH / Dose Metrics")
-        metrics = approximate_metrics(rd, rs, structures, config, rx_gy)
-        st.info(dvh_note())
+        try:
+            metrics = approximate_metrics(rd, rs, structures, config, rx_gy)
+            st.info(dvh_note())
+        except Exception as dvh_error:
+            st.warning("DVH engine failed, so the app is using preliminary metadata-based scoring.")
+            st.exception(dvh_error)
+            metrics = {}
 
         if metrics:
             flat = []
