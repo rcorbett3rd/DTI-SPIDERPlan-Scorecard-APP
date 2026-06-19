@@ -1,0 +1,51 @@
+{
+  "grade_thresholds": {
+    "Platinum": 95,
+    "Gold": 90,
+    "Silver": 85,
+    "Acceptable": 80,
+    "Replan Review": 0
+  },
+  "domain_weights": {
+    "Target Quality": 0.30,
+    "Critical Serial OAR": 0.25,
+    "Functional/QOL OAR": 0.15,
+    "Dose Falloff": 0.12,
+    "Delivery Efficiency": 0.08,
+    "Clinical Completeness": 0.10
+  },
+  "structure_aliases": {
+    "ptv_high": ["PTV_High", "PTV HIGH", "PTV_7000", "PTV70", "PTV_70", "PTV HD", "PTV_HR"],
+    "ptv_mid": ["PTV_Mid", "PTV MID", "PTV_6300", "PTV63", "PTV_63", "PTV IR"],
+    "ptv_low": ["PTV_Low", "PTV LOW", "PTV_5600", "PTV56", "PTV_56", "PTV LR"],
+    "cord": ["SpinalCord", "Spinal Cord", "Cord"],
+    "cord_prv": ["SpinalCord_PRV", "Cord_PRV", "Spinal Cord PRV"],
+    "brainstem": ["Brainstem", "Brain Stem"],
+    "brainstem_prv": ["Brainstem_PRV", "Brain Stem PRV"],
+    "optic_chiasm": ["OpticChiasm", "Optic Chiasm", "Chiasm"],
+    "optic_chiasm_prv": ["OpticChiasm_PRV", "Chiasm_PRV"],
+    "optic_nerve_l": ["OpticNrv_L", "Optic Nerve L", "L Optic Nerve", "OpticNerve_L"],
+    "optic_nerve_r": ["OpticNrv_R", "Optic Nerve R", "R Optic Nerve", "OpticNerve_R"],
+    "parotid_l": ["Parotid_L", "L Parotid", "Parotid Left"],
+    "parotid_r": ["Parotid_R", "R Parotid", "Parotid Right"],
+    "oral_cavity": ["OralCavity", "Oral Cavity", "Cavity_Oral"],
+    "larynx": ["Larynx"],
+    "esophagus": ["Esophagus", "Oesophagus"],
+    "mandible": ["Mandible"],
+    "body": ["Body", "External", "BODY", "Skin"]
+  },
+  "generic_goals": {
+    "PTV V100%": {"ideal": 98, "acceptable": 95, "direction": "higher"},
+    "PTV V105%": {"ideal": 5, "acceptable": 10, "direction": "lower"},
+    "PTV D0.03cc %Rx": {"ideal": 107, "acceptable": 110, "direction": "lower"},
+    "Cord D0.03cc Gy": {"ideal": 45, "acceptable": 50, "direction": "lower"},
+    "Brainstem D0.03cc Gy": {"ideal": 54, "acceptable": 60, "direction": "lower"},
+    "Optic Dmax Gy": {"ideal": 54, "acceptable": 60, "direction": "lower"},
+    "Parotid Mean Gy": {"ideal": 26, "acceptable": 30, "direction": "lower"},
+    "Oral Cavity Mean Gy": {"ideal": 30, "acceptable": 35, "direction": "lower"},
+    "Larynx Mean Gy": {"ideal": 35, "acceptable": 45, "direction": "lower"},
+    "Esophagus Mean Gy": {"ideal": 34, "acceptable": 45, "direction": "lower"},
+    "Mandible Dmax Gy": {"ideal": 70, "acceptable": 73.5, "direction": "lower"},
+    "MU per Gy": {"ideal": 200, "acceptable": 350, "direction": "lower"}
+  }
+}
