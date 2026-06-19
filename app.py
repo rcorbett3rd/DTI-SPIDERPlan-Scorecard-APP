@@ -11,7 +11,7 @@ from dvh_engine import approximate_metrics, dvh_note
 from scorecard_engine import build_metric_table, domain_scores, final_grade
 from spider_chart import make_spider_chart
 
-st.set_page_config(page_title="DTI SPIDERPlan", layout="wide")
+st.set_page_config(page_title="DTI SPIDERPlan Scorecard", layout="wide")
 
 @st.cache_data
 def load_config():
@@ -20,7 +20,7 @@ def load_config():
 
 config = load_config()
 
-st.title("DTI SPIDERPlan AI™ Prototype")
+st.title("DTI SPIDERPlan Scorecard™ Prototype")
 st.caption("Local DICOM RT scorecard prototype for Eclipse/ARIA RT Plan exports")
 
 with st.expander("Clinical / security disclaimer", expanded=False):
