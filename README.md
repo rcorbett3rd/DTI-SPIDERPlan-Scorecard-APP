@@ -1,4 +1,4 @@
-# DTI SPIDERPlan AI™ — Streamlit Web Prototype
+# DTI SPIDERPlan Scorecard™ — Streamlit Web Prototype
 
 This is a Streamlit Community Cloud-ready prototype for uploading de-identified Eclipse/ARIA DICOM RT export files and generating a ProKnow-style metric table plus DTI-SPIDER domain scorecard.
 
