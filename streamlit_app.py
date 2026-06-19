@@ -1,12 +1,12 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title="DTI SPIDERPlan AI",
+    page_title="DTI SPIDERPlan Scorecard",
     page_icon="🕷️",
     layout="wide"
 )
 
-st.title("DTI SPIDERPlan AI™")
+st.title("DTI SPIDERPlan Scorecard™")
 st.subheader("Radiation Plan Scorecard Prototype")
 
 st.warning(
