@@ -73,8 +73,11 @@ if uploaded:
 
         st.subheader("DVH / Dose Metrics")
         try:
-            metrics = approximate_metrics(rd, rs, structures, config, rx_gy)
-            st.info(dvh_note())
+            metrics = {}
+            st.warning(
+                "Web Readiness Mode is active. RD dose-grid DVH calculation is disabled "
+                "for Streamlit Community Cloud stability."
+            )
         except Exception as dvh_error:
             st.warning("DVH engine failed, so the app is using preliminary metadata-based scoring.")
             st.exception(dvh_error)
